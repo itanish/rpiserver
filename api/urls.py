@@ -10,5 +10,6 @@ router.register(r'upload', UploadViewSet, basename="upload")
 # Wire up our API using automatic URL routing.
 urlpatterns = [
     path('', include(router.urls)),
+    path('getimage/', views.getimage, name='getimage'),
 
 ]
